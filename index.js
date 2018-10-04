@@ -19,6 +19,11 @@ function addToCart(item) {
 
 function viewCart() {
   // write your code here
+  var items=[]
+  for(let i=0;i<cart.length;i++) {
+    items.push(cart[i][0]+"at $"+cart[i][1]);
+  }
+  
 }
 
 function total() {
