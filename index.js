@@ -30,7 +30,10 @@ function viewCart() {
     return `In your cart, you have ${items.join(', ')}.`
   }
   else if(cart.length==2) {
-    return `In your cart, you have ${cart[0]['itemName']}+" at $"+${cart[1]['itemPrice']}.`
+    for(let i=0;i<cart.length;i++) {
+      items.push(cart[i]['itemName']+" at $"+cart[i]['itemPrice']);
+    }
+    return `In your cart, you have ${items[0]}, and ${items[1]}.`
   }
 }
 
