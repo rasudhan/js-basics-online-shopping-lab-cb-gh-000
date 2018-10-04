@@ -23,10 +23,15 @@ function viewCart() {
   if(!cart.length) {
     return "Your shopping cart is empty."
   }
-  for(let i=0;i<cart.length;i++) {
-    items.push(cart[i]['itemName']+" at $"+cart[i]['itemPrice']);
+  if(cart.length>3) {
+    for(let i=0;i<cart.length;i++) {
+      items.push(cart[i]['itemName']+" at $"+cart[i]['itemPrice']);
+    }
+    return `In your cart, you have ${items.join(', ')}.`
   }
-  return `In your cart, you have ${items.join(', ')}.`
+  else if(cart.length==2) {
+    return `In your cart, you have ${cart[0]['itemName']}+" at $"+${cart[1]['itemPrice']}.`
+  }
 }
 
 function total() {
