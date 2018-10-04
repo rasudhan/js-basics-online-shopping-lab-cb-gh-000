@@ -20,6 +20,9 @@ function addToCart(item) {
 function viewCart() {
   // write your code here
   var items=[]
+  if(!cart.length) {
+    
+  }
   for(let i=0;i<cart.length;i++) {
     items.push(cart[i]['itemName']+" at $"+cart[i]['itemPrice']);
   }
