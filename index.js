@@ -36,7 +36,7 @@ function viewCart() {
     return `In your cart, you have ${items[0]}, and ${items[1]}.`
   }
   else {
-    return `In your cart, you have ${cart[0]['itemName']}+" at $"+${cart[1]['itemPrice']}.`
+    return `In your cart, you have ${cart[0]['itemName']}+" at $"+${cart[0]['itemPrice']}.`
   }
 }
 
