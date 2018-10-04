@@ -11,8 +11,9 @@ function setCart(c) {
 
 function addToCart(item) {
  // write your code here
- var item_object={"itemName:" [item], "itemPrice:" Math.floor(1+100*Math.random())}
- 
+ var item_object={itemName: [item], itemPrice: Math.floor(1+100*Math.random())}
+
+
 }
 
 function viewCart() {
